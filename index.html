@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Nutrisense</title>
+    <link rel="icon" href="./assets/logo/adaptive-icon.png" />
     <meta
       name="viewport"
       content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
@@ -16,104 +17,249 @@
       name="keywords"
       content="NutriSense, mobile app, nutrition calculator, blog, camera, YOLO model, prevent malnutrition, track food intake, optimal health, nutrient analysis, healthy eating, diet tracking, food recognition"
     />
-    <link href="" rel="stylesheet" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
       integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/penjelasanNutrisi.css" />
+    <link rel="stylesheet" href="./css/timeline.css" />
   </head>
   <body>
     <section id="introduction"></section>
     <section id="purpose"></section>
     <section id="whoDoWeAim"></section>
-    <section id="penjelasanNutrisi"></section>
-    <section id="timeline"></section>
-    <section id="futureBenefit"></section>
+    <section id="penjelasanNutrisi">
+      <div class="w-screen flex">
+        <div class="left w-3/4 h-screen">
+          <div class="h-screen left-item bg-red-400 p-10">
+            <h3 class="animLeftHeader opacity-0 text-2xl font-medium">Carbohydrates</h3>
+            <p class="animLeftContent opacity-0">
+              Carbohydrates are one of the three macronutrients in our diet that provide us with energy. They are found in foods such as bread, pasta, rice, fruits, and vegetables. Carbohydrates are broken down into glucose, which is used by the body for energy. It's important to choose complex carbohydrates, such as whole grains, as they provide sustained energy and are rich in fiber.
+            </p>
+            <ul class="animLeftBenefits opacity-0">
+            <li class="text-2xl font-medium mt-3">Benefits:</li>
+            <ul>
+              <li>- Provide energy for the body</li>
+              <li>- Can help with weight management</li>
+              <li>- Assist with brain and nervous system function</li>
+              <li>- Can improve digestion and bowel health</li>
+            </ul>
+            </ul>
+          </div>
+          <div class="h-screen left-item bg-blue-400 p-10">
+            <h3 class="animLeftHeader opacity-0 text-2xl font-medium">Protein</h3>
+            <p class="animLeftContent opacity-0">
+              Protein is an essential macronutrient that is necessary for building and repairing tissues in the body. It is found in a variety of foods such as meat, fish, dairy, eggs, beans, and nuts. Protein is made up of amino acids, which are the building blocks of the body. It's important to consume a variety of protein sources to ensure that you get all the necessary amino acids.
+            </p>
+            <ul class="animLeftBenefits opacity-0">
+              <li class="text-2xl font-medium mt-3">Benefits:</li>
+              <ul>
+                <li>- Builds and repairs tissues, including muscles, bones, and organs</li>
+                <li>- Helps create enzymes, hormones, and other important chemicals in the body</li>
+                <li>- Important for immune function and the transport of nutrients and oxygen in the blood</li>
+                <li>- Can help with weight management and muscle building when consumed in the right amounts</li>
+              </ul>
+              </ul>
+          </div>
+          <div class="h-screen left-item bg-green-400 p-10">
+            <h3 class="animLeftHeader opacity-0 text-2xl font-medium">Fat</h3>
+            <p class="animLeftContent opacity-0">
+              Fat is an important macronutrient that provides us with energy and helps us absorb essential vitamins and minerals. There are different types of fat, including saturated, unsaturated, and trans fats. It's important to choose unsaturated fats, such as those found in nuts, seeds, avocados, and fatty fish, as they are beneficial for our health.
+            </p>
+            <ul class="animLeftBenefits opacity-0">
+              <li class="text-2xl font-medium mt-3">Benefits:</li>
+              <ul>
+                <li>- Provides energy and helps the body absorb certain vitamins</li>
+                <li>- Essential for brain function and hormone production</li>
+                <li>- Helps protect organs and keep the body insulated and warm</li>
+                <li>- Can contribute to satiety and help with weight management when consumed in the right amounts and types</li>
+              </ul>
+              </ul>
+          </div>
+          <div class="h-screen left-item bg-yellow-400 p-10">
+            <h3 class="animLeftHeader opacity-0 text-2xl font-medium">Water</h3>
+            <p class="animLeftContent opacity-0">
+              Water is essential for our survival and makes up a significant portion of our body weight. It helps regulate body temperature, transport nutrients, and remove waste. It's important to stay hydrated by drinking water and consuming foods that contain high water content, such as fruits and vegetables.
+            </p>
+            <ul class="animLeftBenefits opacity-0">
+              <li class="text-2xl font-medium mt-3">Benefits:</li>
+              <ul>
+                <li>- Essential for all bodily functions, including digestion, absorption, and transportation of nutrients</li>
+                <li>- Helps regulate body temperature and maintain fluid balance</li>
+                <li>- Aids in waste removal and helps prevent constipation and kidney stones</li>
+                <li>- Can help with weight management by promoting feelings of fullness and reducing calorie intake</li>
+              </ul>
+              </ul>
+          </div>
+          <div class="h-screen left-item bg-orange-400 p-10">
+            <h3 class="animLeftHeader opacity-0 text-2xl font-medium">Mineral</h3>
+            <p class="animLeftContent opacity-0">
+              Minerals are essential nutrients that are necessary for various bodily functions. They are found in a variety of foods such as fruits, vegetables, dairy, and meats. Some important minerals include calcium, iron, and potassium. It's important to consume a variety of foods to ensure that you get all the necessary minerals for optimal health.
+            </p>
+            <ul class="animLeftBenefits opacity-0">
+              <li class="text-2xl font-medium mt-3">Benefits:</li>
+              <ul>
+                <li>- Important for bone health, muscle function, and nerve function</li>
+                <li>- Play a role in regulating blood pressure and heart rate</li>
+                <li>- Assist in the production of hormones and enzymes</li>
+                <li>- Help maintain fluid balance and contribute to overall health and wellness</li>
+              </ul>
+              </ul>
+          </div>
+        </div>
+        <div class="right w-1/4 my-56">
+          <div class="box overflow-hidden w-24 h-24 mx-auto py-auto">
+            <div
+              class="box-item w-24 h-24 bg-red-400 flex items-center justify-center"
+            >
+              <img class="w-24 h-24 p-1" src="./assets/penjelasanNutrisi/bread.png" alt="">
+            </div>
+            <div
+              class="box-item w-24 h-24 bg-blue-400 flex items-center justify-center"
+            >
+            <img class="w-24 h-24 p-1" src="./assets/penjelasanNutrisi/fish.png" alt="">
 
-    <!-- <canvas class="info" id="car-canvas"></canvas>
-    <h1>Title</h1>
-    <h2>Description</h2>
-    <div class="wrapper p-10">
-      <div class="containerWidth relative flex scrollx mt-20">
-        <svg
-          class="absolute"
-          viewBox="0 0 900 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-            fill="#D9D9D9"
-          />
-          <mask
-            id="mask0_0_1"
-            style="mask-type: alpha"
-            maskUnits="userSpaceOnUse"
-            x="0"
-            y="0"
-            width="900"
-            height="10"
-          >
-            <path
-              d="M9.89998 6C9.43671 8.28224 7.41896 10 5 10C2.23858 10 0 7.76142 0 5C0 2.23858 2.23858 0 5 0C7.41896 0 9.43671 1.71776 9.89998 4H445.1C445.563 1.71776 447.581 0 450 0C452.419 0 454.437 1.71776 454.9 4H890.1C890.563 1.71776 892.581 0 895 0C897.761 0 900 2.23858 900 5C900 7.76142 897.761 10 895 10C892.581 10 890.563 8.28224 890.1 6H454.9C454.437 8.28224 452.419 10 450 10C447.581 10 445.563 8.28224 445.1 6H9.89998Z"
-              fill="#D9D9D9"
-            />
-          </mask>
-          <g mask="url(#mask0_0_1)">
-            <rect class="mask" y="-49" height="99" fill="black" />
-          </g>
-        </svg>
-        <section class="w-full">
-          <span class="text-xl">Advance</span>
-          <h1 class="text-4xl">Nutrients</h1>
-          <div class="flex">
-            <p class="max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              rerum modi in dicta
-            </p>
-            <p class="max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              rerum modi in dicta
-            </p>
+            </div>
+            <div
+              class="box-item w-24 h-24 bg-green-400 flex items-center justify-center"
+            >
+            <img class="w-24 h-24 p-1" src="./assets/penjelasanNutrisi/fruit.png" alt="">
+
+            </div>
+            <div
+              class="box-item w-24 h-24 bg-yellow-400 flex items-center justify-center"
+            >
+            <img class="w-24 h-24 p-1" src="./assets/penjelasanNutrisi/water.png" alt="">
+
+            </div>
+            <div
+              class="box-item w-24 h-24 bg-orange-400 flex items-center justify-center"
+            >
+            <img class="w-24 h-24 p-1" src="./assets/penjelasanNutrisi/minerals.png" alt="">
+
+            </div>
           </div>
-        </section>
-        <section class="w-full">
-          <span class="text-xl">Advance</span>
-          <h1 class="text-4xl">Nutri</h1>
-          <div class="flex">
-            <p class="max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              rerum modi in dicta
-            </p>
-            <p class="max-w-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              rerum modi in dicta
-            </p>
+          <div class="nutrients">
+            <h3 class="nutrients-item animRight opacity-0 text-center">
+              Carbohydrates
+            </h3>
+            <h3 class="nutrients-item animRight opacity-0 text-center">
+              Protein
+            </h3>
+            <h3 class="nutrients-item animRight opacity-0 text-center">Fat</h3>
+            <h3 class="nutrients-item animRight opacity-0 text-center">
+              Water
+            </h3>
+            <h3 class="nutrients-item animRight opacity-0 text-center">
+              Minerals
+            </h3>
           </div>
-        </section>
-      </div>
-    </div> -->
-    <section class="w-full">
-      <span class="text-xl">Advance</span>
-      <h1 class="text-4xl">ents</h1>
-      <div class="flex">
-        <p class="max-w-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum
-          modi in dicta
-        </p>
-        <p class="max-w-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rerum
-          modi in dicta
-        </p>
+        </div>
       </div>
     </section>
+    <section id="timeline" class="flex px-10">
+      <div class="left flex justify-center align-center">
+      <svg
+        id="svg"
+        width="500"
+        height="800"
+        viewBox="0 0 4500 6000"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle cx="211.1" cy="211.1" r="211.1" fill="#262626" />
+        <path
+          d="M73.2411 245.783C75.9243 243.652 77.1475 242.666 76.9107 242.823C84.6445 236.431 90.721 231.183 95.1403 227.08C99.6385 222.976 103.426 218.675 106.504 214.177C109.582 209.679 111.121 205.299 111.121 201.037C111.121 197.802 110.371 195.277 108.872 193.461C107.372 191.646 105.123 190.739 102.124 190.739C99.1256 190.739 96.7581 191.883 95.0219 194.172C93.3647 196.381 92.5361 199.538 92.5361 203.642H73.0044C73.1622 196.934 74.5827 191.331 77.2659 186.833C80.0279 182.334 83.6186 179.02 88.0379 176.889C92.5361 174.758 97.5078 173.693 102.953 173.693C112.344 173.693 119.407 176.1 124.142 180.914C128.956 185.728 131.363 192.002 131.363 199.735C131.363 208.179 128.482 216.031 122.721 223.292C116.961 230.473 109.621 237.497 100.704 244.362H132.665V260.816H73.2411V245.783ZM141.577 217.61C141.577 204.036 144.181 193.343 149.39 185.53C154.677 177.718 163.161 173.811 174.84 173.811C186.52 173.811 194.964 177.718 200.172 185.53C205.46 193.343 208.103 204.036 208.103 217.61C208.103 231.341 205.46 242.113 200.172 249.926C194.964 257.739 186.52 261.645 174.84 261.645C163.161 261.645 154.677 257.739 149.39 249.926C144.181 242.113 141.577 231.341 141.577 217.61ZM188.216 217.61C188.216 209.639 187.348 203.523 185.612 199.262C183.876 194.921 180.285 192.751 174.84 192.751C169.395 192.751 165.804 194.921 164.068 199.262C162.332 203.523 161.464 209.639 161.464 217.61C161.464 222.976 161.78 227.435 162.411 230.986C163.042 234.458 164.305 237.299 166.199 239.509C168.172 241.64 171.052 242.705 174.84 242.705C178.628 242.705 181.469 241.64 183.363 239.509C185.336 237.299 186.638 234.458 187.269 230.986C187.901 227.435 188.216 222.976 188.216 217.61ZM218.087 245.783C220.771 243.652 221.994 242.666 221.757 242.823C229.491 236.431 235.567 231.183 239.987 227.08C244.485 222.976 248.273 218.675 251.35 214.177C254.428 209.679 255.967 205.299 255.967 201.037C255.967 197.802 255.217 195.277 253.718 193.461C252.219 191.646 249.969 190.739 246.971 190.739C243.972 190.739 241.604 191.883 239.868 194.172C238.211 196.381 237.382 199.538 237.382 203.642H217.851C218.008 196.934 219.429 191.331 222.112 186.833C224.874 182.334 228.465 179.02 232.884 176.889C237.382 174.758 242.354 173.693 247.799 173.693C257.19 173.693 264.253 176.1 268.988 180.914C273.802 185.728 276.209 192.002 276.209 199.735C276.209 208.179 273.329 216.031 267.568 223.292C261.807 230.473 254.468 237.497 245.55 244.362H277.511V260.816H218.087V245.783ZM287.134 199.972C287.449 191.528 290.211 185.017 295.42 180.44C300.628 175.863 307.691 173.575 316.609 173.575C322.527 173.575 327.578 174.601 331.761 176.652C336.022 178.704 339.218 181.506 341.349 185.057C343.558 188.608 344.663 192.593 344.663 197.013C344.663 202.221 343.361 206.483 340.757 209.797C338.153 213.033 335.114 215.242 331.642 216.426V216.9C336.14 218.399 339.692 220.885 342.296 224.357C344.9 227.829 346.202 232.288 346.202 237.733C346.202 242.626 345.058 246.967 342.769 250.754C340.56 254.464 337.285 257.383 332.944 259.514C328.683 261.645 323.593 262.71 317.674 262.71C308.204 262.71 300.628 260.382 294.946 255.726C289.343 251.07 286.384 244.047 286.068 234.656H305.718C305.797 238.128 306.784 240.89 308.678 242.942C310.572 244.915 313.334 245.901 316.964 245.901C320.042 245.901 322.409 245.033 324.066 243.297C325.802 241.482 326.67 239.114 326.67 236.194C326.67 232.407 325.447 229.684 323.001 228.027C320.633 226.291 316.806 225.422 311.519 225.422H307.731V208.968H311.519C315.543 208.968 318.779 208.298 321.225 206.956C323.751 205.536 325.013 203.05 325.013 199.499C325.013 196.658 324.224 194.448 322.646 192.87C321.067 191.291 318.897 190.502 316.135 190.502C313.136 190.502 310.887 191.41 309.388 193.225C307.967 195.04 307.139 197.289 306.902 199.972H287.134Z"
+          fill="white"
+        />
+        <circle cx="4054.31" cy="1390.89" r="211.1" fill="#262626" />
+        <path
+          d="M3912.02 1425.78C3914.7 1423.65 3915.93 1422.67 3915.69 1422.82C3923.43 1416.43 3929.5 1411.18 3933.92 1407.08C3938.42 1402.98 3942.21 1398.68 3945.28 1394.18C3948.36 1389.68 3949.9 1385.3 3949.9 1381.04C3949.9 1377.8 3949.15 1375.28 3947.65 1373.46C3946.15 1371.65 3943.9 1370.74 3940.9 1370.74C3937.91 1370.74 3935.54 1371.88 3933.8 1374.17C3932.15 1376.38 3931.32 1379.54 3931.32 1383.64H3911.79C3911.94 1376.93 3913.36 1371.33 3916.05 1366.83C3918.81 1362.33 3922.4 1359.02 3926.82 1356.89C3931.32 1354.76 3936.29 1353.69 3941.73 1353.69C3951.12 1353.69 3958.19 1356.1 3962.92 1360.91C3967.74 1365.73 3970.14 1372 3970.14 1379.74C3970.14 1388.18 3967.26 1396.03 3961.5 1403.29C3955.74 1410.47 3948.4 1417.5 3939.48 1424.36H3971.45V1440.82H3912.02V1425.78ZM3980.36 1397.61C3980.36 1384.04 3982.96 1373.34 3988.17 1365.53C3993.46 1357.72 4001.94 1353.81 4013.62 1353.81C4025.3 1353.81 4033.74 1357.72 4038.95 1365.53C4044.24 1373.34 4046.88 1384.04 4046.88 1397.61C4046.88 1411.34 4044.24 1422.11 4038.95 1429.93C4033.74 1437.74 4025.3 1441.64 4013.62 1441.64C4001.94 1441.64 3993.46 1437.74 3988.17 1429.93C3982.96 1422.11 3980.36 1411.34 3980.36 1397.61ZM4027 1397.61C4027 1389.64 4026.13 1383.52 4024.39 1379.26C4022.66 1374.92 4019.07 1372.75 4013.62 1372.75C4008.18 1372.75 4004.58 1374.92 4002.85 1379.26C4001.11 1383.52 4000.24 1389.64 4000.24 1397.61C4000.24 1402.98 4000.56 1407.43 4001.19 1410.99C4001.82 1414.46 4003.09 1417.3 4004.98 1419.51C4006.95 1421.64 4009.83 1422.71 4013.62 1422.71C4017.41 1422.71 4020.25 1421.64 4022.14 1419.51C4024.12 1417.3 4025.42 1414.46 4026.05 1410.99C4026.68 1407.43 4027 1402.98 4027 1397.61ZM4056.87 1425.78C4059.55 1423.65 4060.77 1422.67 4060.54 1422.82C4068.27 1416.43 4074.35 1411.18 4078.77 1407.08C4083.27 1402.98 4087.05 1398.68 4090.13 1394.18C4093.21 1389.68 4094.75 1385.3 4094.75 1381.04C4094.75 1377.8 4094 1375.28 4092.5 1373.46C4091 1371.65 4088.75 1370.74 4085.75 1370.74C4082.75 1370.74 4080.38 1371.88 4078.65 1374.17C4076.99 1376.38 4076.16 1379.54 4076.16 1383.64H4056.63C4056.79 1376.93 4058.21 1371.33 4060.89 1366.83C4063.65 1362.33 4067.25 1359.02 4071.66 1356.89C4076.16 1354.76 4081.13 1353.69 4086.58 1353.69C4095.97 1353.69 4103.03 1356.1 4107.77 1360.91C4112.58 1365.73 4114.99 1372 4114.99 1379.74C4114.99 1388.18 4112.11 1396.03 4106.35 1403.29C4100.59 1410.47 4093.25 1417.5 4084.33 1424.36H4116.29V1440.82H4056.87V1425.78ZM4125.68 1426.61V1410.28L4163.08 1356.77H4185.69V1409.09H4195.4V1426.61H4185.69V1442H4165.45V1426.61H4125.68ZM4166.87 1379.03L4146.98 1409.09H4166.87V1379.03Z"
+          fill="white"
+        />
+        <circle cx="838.483" cy="2247.13" r="211.1" fill="#262626" />
+        <path
+          d="M698.367 2283.97C701.051 2281.84 702.274 2280.85 702.037 2281.01C709.771 2274.62 715.847 2269.37 720.267 2265.27C724.765 2261.16 728.553 2256.86 731.631 2252.36C734.708 2247.87 736.247 2243.49 736.247 2239.22C736.247 2235.99 735.497 2233.46 733.998 2231.65C732.499 2229.83 730.25 2228.93 727.251 2228.93C724.252 2228.93 721.884 2230.07 720.148 2232.36C718.491 2234.57 717.662 2237.73 717.662 2241.83H698.131C698.289 2235.12 699.709 2229.52 702.392 2225.02C705.154 2220.52 708.745 2217.21 713.164 2215.08C717.662 2212.95 722.634 2211.88 728.079 2211.88C737.47 2211.88 744.533 2214.29 749.268 2219.1C754.082 2223.92 756.489 2230.19 756.489 2237.92C756.489 2246.37 753.609 2254.22 747.848 2261.48C742.087 2268.66 734.748 2275.68 725.83 2282.55H757.791V2299H698.367V2283.97ZM766.703 2255.8C766.703 2242.22 769.308 2231.53 774.516 2223.72C779.804 2215.91 788.287 2212 799.967 2212C811.646 2212 820.09 2215.91 825.299 2223.72C830.586 2231.53 833.23 2242.22 833.23 2255.8C833.23 2269.53 830.586 2280.3 825.299 2288.11C820.09 2295.93 811.646 2299.83 799.967 2299.83C788.287 2299.83 779.804 2295.93 774.516 2288.11C769.308 2280.3 766.703 2269.53 766.703 2255.8ZM813.343 2255.8C813.343 2247.83 812.475 2241.71 810.739 2237.45C809.002 2233.11 805.412 2230.94 799.967 2230.94C794.521 2230.94 790.931 2233.11 789.195 2237.45C787.458 2241.71 786.59 2247.83 786.59 2255.8C786.59 2261.16 786.906 2265.62 787.537 2269.17C788.169 2272.65 789.431 2275.49 791.325 2277.7C793.298 2279.83 796.179 2280.89 799.967 2280.89C803.755 2280.89 806.595 2279.83 808.489 2277.7C810.462 2275.49 811.764 2272.65 812.396 2269.17C813.027 2265.62 813.343 2261.16 813.343 2255.8ZM843.214 2283.97C845.897 2281.84 847.12 2280.85 846.883 2281.01C854.617 2274.62 860.694 2269.37 865.113 2265.27C869.611 2261.16 873.399 2256.86 876.477 2252.36C879.555 2247.87 881.093 2243.49 881.093 2239.22C881.093 2235.99 880.344 2233.46 878.844 2231.65C877.345 2229.83 875.096 2228.93 872.097 2228.93C869.098 2228.93 866.731 2230.07 864.995 2232.36C863.337 2234.57 862.509 2237.73 862.509 2241.83H842.977C843.135 2235.12 844.555 2229.52 847.238 2225.02C850 2220.52 853.591 2217.21 858.01 2215.08C862.509 2212.95 867.48 2211.88 872.926 2211.88C882.317 2211.88 889.38 2214.29 894.115 2219.1C898.928 2223.92 901.335 2230.19 901.335 2237.92C901.335 2246.37 898.455 2254.22 892.694 2261.48C886.933 2268.66 879.594 2275.68 870.676 2282.55H902.637V2299H843.214V2283.97ZM972.394 2231.41H935.461V2247.75C937.04 2246.01 939.249 2244.59 942.09 2243.49C944.931 2242.38 948.009 2241.83 951.323 2241.83C957.242 2241.83 962.135 2243.17 966.002 2245.85C969.947 2248.54 972.828 2252.01 974.643 2256.27C976.458 2260.53 977.366 2265.15 977.366 2270.12C977.366 2279.35 974.761 2286.69 969.553 2292.14C964.344 2297.5 957.005 2300.19 947.535 2300.19C941.222 2300.19 935.737 2299.12 931.081 2296.99C926.425 2294.78 922.835 2291.74 920.309 2287.88C917.784 2284.01 916.403 2279.55 916.166 2274.5H935.935C936.408 2276.95 937.552 2279 939.368 2280.66C941.183 2282.23 943.668 2283.02 946.825 2283.02C950.534 2283.02 953.296 2281.84 955.111 2279.47C956.926 2277.1 957.834 2273.95 957.834 2270C957.834 2266.14 956.887 2263.18 954.993 2261.12C953.099 2259.07 950.337 2258.05 946.707 2258.05C944.024 2258.05 941.814 2258.72 940.078 2260.06C938.342 2261.32 937.197 2263.02 936.645 2265.15H917.113V2213.66H972.394V2231.41Z"
+          fill="white"
+        />
+        <circle cx="2791.65" cy="3044.18" r="211.1" fill="#262626" />
+        <path
+          d="M2652.39 3078.78C2655.07 3076.65 2656.3 3075.67 2656.06 3075.82C2663.79 3069.43 2669.87 3064.18 2674.29 3060.08C2678.79 3055.98 2682.58 3051.68 2685.65 3047.18C2688.73 3042.68 2690.27 3038.3 2690.27 3034.04C2690.27 3030.8 2689.52 3028.28 2688.02 3026.46C2686.52 3024.65 2684.27 3023.74 2681.27 3023.74C2678.28 3023.74 2675.91 3024.88 2674.17 3027.17C2672.52 3029.38 2671.69 3032.54 2671.69 3036.64H2652.15C2652.31 3029.93 2653.73 3024.33 2656.42 3019.83C2659.18 3015.33 2662.77 3012.02 2667.19 3009.89C2671.69 3007.76 2676.66 3006.69 2682.1 3006.69C2691.49 3006.69 2698.56 3009.1 2703.29 3013.91C2708.11 3018.73 2710.51 3025 2710.51 3032.74C2710.51 3041.18 2707.63 3049.03 2701.87 3056.29C2696.11 3063.47 2688.77 3070.5 2679.85 3077.36H2711.82V3093.82H2652.39V3078.78ZM2720.73 3050.61C2720.73 3037.04 2723.33 3026.34 2728.54 3018.53C2733.83 3010.72 2742.31 3006.81 2753.99 3006.81C2765.67 3006.81 2774.11 3010.72 2779.32 3018.53C2784.61 3026.34 2787.25 3037.04 2787.25 3050.61C2787.25 3064.34 2784.61 3075.11 2779.32 3082.93C2774.11 3090.74 2765.67 3094.64 2753.99 3094.64C2742.31 3094.64 2733.83 3090.74 2728.54 3082.93C2723.33 3075.11 2720.73 3064.34 2720.73 3050.61ZM2767.37 3050.61C2767.37 3042.64 2766.5 3036.52 2764.76 3032.26C2763.03 3027.92 2759.44 3025.75 2753.99 3025.75C2748.55 3025.75 2744.95 3027.92 2743.22 3032.26C2741.48 3036.52 2740.61 3042.64 2740.61 3050.61C2740.61 3055.98 2740.93 3060.43 2741.56 3063.99C2742.19 3067.46 2743.46 3070.3 2745.35 3072.51C2747.32 3074.64 2750.2 3075.71 2753.99 3075.71C2757.78 3075.71 2760.62 3074.64 2762.51 3072.51C2764.49 3070.3 2765.79 3067.46 2766.42 3063.99C2767.05 3060.43 2767.37 3055.98 2767.37 3050.61ZM2797.24 3078.78C2799.92 3076.65 2801.14 3075.67 2800.91 3075.82C2808.64 3069.43 2814.72 3064.18 2819.14 3060.08C2823.64 3055.98 2827.42 3051.68 2830.5 3047.18C2833.58 3042.68 2835.12 3038.3 2835.12 3034.04C2835.12 3030.8 2834.37 3028.28 2832.87 3026.46C2831.37 3024.65 2829.12 3023.74 2826.12 3023.74C2823.12 3023.74 2820.75 3024.88 2819.02 3027.17C2817.36 3029.38 2816.53 3032.54 2816.53 3036.64H2797C2797.16 3029.93 2798.58 3024.33 2801.26 3019.83C2804.02 3015.33 2807.62 3012.02 2812.03 3009.89C2816.53 3007.76 2821.5 3006.69 2826.95 3006.69C2836.34 3006.69 2843.4 3009.1 2848.14 3013.91C2852.95 3018.73 2855.36 3025 2855.36 3032.74C2855.36 3041.18 2852.48 3049.03 2846.72 3056.29C2840.96 3063.47 2833.62 3070.5 2824.7 3077.36H2856.66V3093.82H2797.24V3078.78ZM2908.31 3031.91C2907.68 3028.99 2906.57 3026.82 2904.99 3025.4C2903.41 3023.9 2901.16 3023.15 2898.24 3023.15C2893.75 3023.15 2890.51 3025.12 2888.54 3029.07C2886.57 3032.93 2885.54 3039.09 2885.46 3047.53C2887.2 3044.77 2889.68 3042.6 2892.92 3041.02C2896.23 3039.44 2899.86 3038.65 2903.81 3038.65C2911.54 3038.65 2917.74 3041.1 2922.39 3045.99C2927.13 3050.89 2929.5 3057.71 2929.5 3066.47C2929.5 3072.23 2928.31 3077.28 2925.94 3081.62C2923.66 3085.96 2920.26 3089.36 2915.76 3091.8C2911.34 3094.25 2906.1 3095.47 2900.02 3095.47C2887.87 3095.47 2879.42 3091.69 2874.69 3084.11C2869.95 3076.45 2867.59 3065.49 2867.59 3051.2C2867.59 3036.21 2870.07 3025.08 2875.04 3017.82C2880.09 3010.48 2888.14 3006.81 2899.19 3006.81C2905.11 3006.81 2910.08 3008 2914.11 3010.36C2918.21 3012.65 2921.29 3015.69 2923.34 3019.48C2925.47 3023.27 2926.73 3027.41 2927.13 3031.91H2908.31ZM2898.96 3054.63C2895.56 3054.63 2892.72 3055.66 2890.43 3057.71C2888.22 3059.69 2887.12 3062.53 2887.12 3066.24C2887.12 3070.02 2888.14 3072.98 2890.2 3075.11C2892.33 3077.24 2895.33 3078.31 2899.19 3078.31C2902.66 3078.31 2905.39 3077.28 2907.36 3075.23C2909.41 3073.1 2910.44 3070.22 2910.44 3066.59C2910.44 3062.88 2909.45 3059.96 2907.48 3057.83C2905.51 3055.7 2902.66 3054.63 2898.96 3054.63Z"
+          fill="white"
+        />
+        <circle cx="1694.72" cy="4811.9" r="211.1" fill="#262626" />
+        <path
+          d="M1561.4 4846.78C1564.09 4844.65 1565.31 4843.67 1565.07 4843.82C1572.81 4837.43 1578.88 4832.18 1583.3 4828.08C1587.8 4823.98 1591.59 4819.68 1594.67 4815.18C1597.74 4810.68 1599.28 4806.3 1599.28 4802.04C1599.28 4798.8 1598.53 4796.28 1597.03 4794.46C1595.53 4792.65 1593.28 4791.74 1590.29 4791.74C1587.29 4791.74 1584.92 4792.88 1583.18 4795.17C1581.53 4797.38 1580.7 4800.54 1580.7 4804.64H1561.17C1561.32 4797.93 1562.74 4792.33 1565.43 4787.83C1568.19 4783.33 1571.78 4780.02 1576.2 4777.89C1580.7 4775.76 1585.67 4774.69 1591.11 4774.69C1600.51 4774.69 1607.57 4777.1 1612.3 4781.91C1617.12 4786.73 1619.52 4793 1619.52 4800.74C1619.52 4809.18 1616.64 4817.03 1610.88 4824.29C1605.12 4831.47 1597.78 4838.5 1588.87 4845.36H1620.83V4861.82H1561.4V4846.78ZM1629.74 4818.61C1629.74 4805.04 1632.34 4794.34 1637.55 4786.53C1642.84 4778.72 1651.32 4774.81 1663 4774.81C1674.68 4774.81 1683.13 4778.72 1688.33 4786.53C1693.62 4794.34 1696.26 4805.04 1696.26 4818.61C1696.26 4832.34 1693.62 4843.11 1688.33 4850.93C1683.13 4858.74 1674.68 4862.64 1663 4862.64C1651.32 4862.64 1642.84 4858.74 1637.55 4850.93C1632.34 4843.11 1629.74 4832.34 1629.74 4818.61ZM1676.38 4818.61C1676.38 4810.64 1675.51 4804.52 1673.77 4800.26C1672.04 4795.92 1668.45 4793.75 1663 4793.75C1657.56 4793.75 1653.97 4795.92 1652.23 4800.26C1650.49 4804.52 1649.63 4810.64 1649.63 4818.61C1649.63 4823.98 1649.94 4828.43 1650.57 4831.99C1651.2 4835.46 1652.47 4838.3 1654.36 4840.51C1656.33 4842.64 1659.21 4843.71 1663 4843.71C1666.79 4843.71 1669.63 4842.64 1671.52 4840.51C1673.5 4838.3 1674.8 4835.46 1675.43 4831.99C1676.06 4828.43 1676.38 4823.98 1676.38 4818.61ZM1706.25 4846.78C1708.93 4844.65 1710.16 4843.67 1709.92 4843.82C1717.65 4837.43 1723.73 4832.18 1728.15 4828.08C1732.65 4823.98 1736.43 4819.68 1739.51 4815.18C1742.59 4810.68 1744.13 4806.3 1744.13 4802.04C1744.13 4798.8 1743.38 4796.28 1741.88 4794.46C1740.38 4792.65 1738.13 4791.74 1735.13 4791.74C1732.13 4791.74 1729.77 4792.88 1728.03 4795.17C1726.37 4797.38 1725.54 4800.54 1725.54 4804.64H1706.01C1706.17 4797.93 1707.59 4792.33 1710.27 4787.83C1713.04 4783.33 1716.63 4780.02 1721.05 4777.89C1725.54 4775.76 1730.52 4774.69 1735.96 4774.69C1745.35 4774.69 1752.41 4777.1 1757.15 4781.91C1761.96 4786.73 1764.37 4793 1764.37 4800.74C1764.37 4809.18 1761.49 4817.03 1755.73 4824.29C1749.97 4831.47 1742.63 4838.5 1733.71 4845.36H1765.67V4861.82H1706.25V4846.78ZM1829.75 4791.74L1800.04 4863H1779.32L1809.39 4793.99H1772.57V4776.71H1829.75V4791.74Z"
+          fill="white"
+        />
+        <path
+          id="path"
+          d="M473.495 410.363C1011.44 719.451 2816.77 2088.77 3754.43 1124.55C3963.55 909.507 4397.59 992.369 4442.97 1325.79C4495.93 1714.85 4180.58 1811.12 3361.82 1826.9C2543.07 1842.69 1347.5 1550.7 698.411 1897.93C49.3279 2245.16 426.151 2846.89 828.623 2846.89C1231.09 2846.89 2706.82 2568.72 3014.59 2677.22C3322.36 2785.73 3545.3 3010.64 3415.09 3334.2C3284.88 3657.76 2594.36 3503.87 2280.67 3334.2C2047.82 3208.26 132.184 3162.56 1165.98 4683.66C1220.96 4764.55 1344.5 4815 1418.51 4796.12"
+          stroke="black"
+          stroke-width="3.9458"
+        />
+        <circle id="rect" cx="42" cy="42" r="42" fill="black" />
+      </svg>
+
+      </div>
+      <div class="right flex">
+        <div class="timeline-cards my-auto">
+          <h2 class="text-2xl text-left">Timeline</h2>
+          <div class="timeline-card d-none">
+            <h3 class="text-2xl bold">2023</h3>
+            <ul>
+              <li class="w-42">- Launch the Nutrisense mobile app on the <span class="font-bold">Google Play Store</span>. Focus on marketing and user acquisition efforts to increase downloads.</li>
+              <li class="w-42">- Collect feedback from users to <span class="font-bold">identify potential improvements and bug fixes.</span></li>
+              <li class="w-42">- <span class="font-bold">Collaborate with nutritionists</span> to develop a blog with informative and helpful articles related to nutrition.</li>
+            </ul>
+          </div>
+          <div class="timeline-card d-none">
+            <h3 class="text-2xl font-medium">2024</h3>
+            <ul>
+              <li class="w-42">- Add new ingredients to the nutrition database and <span class="font-bold">improve the accuracy of the YOLO model</span> used to identify foods in images.</li>
+              <li class="w-42">- <span class="font-bold">Partner with schools and healthcare providers</span> to promote the use of Nutrisense among students and patients.</li>
+            </ul>
+          </div>
+          <div class="timeline-card d-none">
+            <h3 class="text-2xl font-medium">2025</h3>
+            <ul>
+              <li>- - Expand Nutrisense to <span class="font-bold">iOS devices</span> to reach a wider audience.</li>
+              <li>- - Introduce a <span class="font-bold">premium version</span> of the app that offers advanced features such as personalized coaching and customized nutrition plans.</li>
+              <li>- - Develop a social media presence to <span class="font-bold">engage with users</span> and share <span class="font-bold">content related to nutrition and healthy lifestyles</span>.</li>
+            </ul>
+          </div>
+          <div class="timeline-card d-none">
+            <h3 class="text-2xl font-medium">2026</h3>
+            <ul>
+              <li>- - Improve the calculator page by adding a <span class="font-bold"></span>voice-to-text feature that allows users to input their food intake using their voice.</li>
+              <li>- - Explore <span class="font-bold">partnerships with grocery stores and restaurants</span> to provide users with accurate nutrition information on food items.</li>
+              <li>- - <span class="font-bold">Host events and webinars</span> to promote the importance of proper nutrition and educate users on how to make healthy choices.</li>
+            </ul>
+          </div>
+          <div class="timeline-card opacity-0">
+            <h3 class="text-2xl font-medium">2027</h3>
+            <ul>
+              <li class="w-42">- Develop an <span class="font-bold">AI-powered chatbot</span> that can answer users' nutrition-related questions and provide personalized recommendations.</li>
+              <li class="w-42">- Expand Nutrisense to other countries and add <span class="font-bold">support for multiple languages</span>.</li>
+              <li class="w-42">- Collaborate with nutritionists and medical experts to conduct research studies on the effectiveness of Nutrisense in <span class="font-bold">preventing malnutrition</span>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    <section id="futureBenefit"></section>
+
+    <!-- <canvas class="info" id="car-canvas"></canvas> -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/TextPlugin.min.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/penjelasanNutrisi.js"></script>
+    <script src="./js/timeline.js"></script>
   </body>
 </html>
