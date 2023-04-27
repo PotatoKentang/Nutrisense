@@ -57,3 +57,13 @@ svg{
     /*It needs a monospaced font to work best. Have tested it with Source Code Pro aswell.*/
     /* font-family: monospace; */
 }
+
+#dot1{
+  transition: all 0.35s ease-in-out;
+}
+#dot2{
+  transition: all 0.35s ease-in-out;
+}
+#dot3{
+  transition: all 0.35s ease-in-out;
+}

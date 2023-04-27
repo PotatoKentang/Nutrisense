@@ -17,8 +17,8 @@ let scrollTween = gsap.to(sections, {
     // markers: true,
     // onUpdate: self => console.log("progress:", self.progress)
     onUpdate: self => {if (self.progress>0.25 && self.progress<0.75) {
-      b.setAttribute("width", "50");
-      b.setAttribute("height", "50");
+      b.setAttribute("width", "30");
+      b.setAttribute("height", "30");
     } else{
       b.setAttribute("width", "20");
       b.setAttribute("height", "20");
@@ -28,15 +28,15 @@ let scrollTween = gsap.to(sections, {
     //   b.setAttribute("height", "20");
     // }
     if(self.progress<0.25 || self.progress==0){
-      a.setAttribute("width", "50");
-      a.setAttribute("height", "50");
+      a.setAttribute("width", "30");
+      a.setAttribute("height", "30");
     }else{
       a.setAttribute("width", "20");
       a.setAttribute("height", "20");
     }
     if(self.progress >0.75){
-      c.setAttribute("width", "50");
-      c.setAttribute("height", "50");
+      c.setAttribute("width", "30");
+      c.setAttribute("height", "30");
     }else{
       c.setAttribute("width", "20");
       c.setAttribute("height", "20");
@@ -101,11 +101,15 @@ class TypeWriter {
 
     /*Hiding the first cursor*/
       gsap.to(".blinkCursorStart", {
+        scrollTrigger: {
+          trigger: "#futureBenefit"},
           opacity: 0
       })
       
     /*Showing the second cursor, making it run in an infinite loop*/
       gsap.to(".blinkCursorEnd", {
+        scrollTrigger: {
+          trigger: "#futureBenefit"},
           borderRightColor: "transparent",
           duration: .5,
           repeat: -1,
@@ -116,8 +120,12 @@ class TypeWriter {
       
       /*The actual text being animated.*/
       gsap.to(this.elemSelector, {
+        scrollTrigger: {
+          trigger: "#futureBenefit",
+          // markers: true,
+        },
           width: `${this.heading.length + .2}ch`,
-          duration: 2,
+          duration: 10,
           ease: `steps(${this.heading.length})`
       })
 

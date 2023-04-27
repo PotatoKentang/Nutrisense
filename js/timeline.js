@@ -50,7 +50,7 @@ animationTrigger = gsap.to("#rect", {
   scrollTrigger: {
     trigger: "#timeline",
     start: "top top",
-    end: "bottom+=1000",
+    end: "bottom+=5000",
     scrub: 3,
     pin: true,
     // markers: true,
