@@ -1,5 +1,12 @@
 var vid = document.getElementById("intro-vid");
-x.playbackRate = 2;
+vid.playbackRate = 2;
 
-const t1 = gsap.timeline();
-t1.to("#intro-content", )
+const tl = gsap.timeline();
+tl.to(".video-wrap",{
+    duration: 3
+});
+tl.to(".txt",{
+    opacity: 1,
+    duration: 1,
+    stagger: .25
+})

@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/penjelasanNutrisi.css" />
     <link rel="stylesheet" href="./css/timeline.css" />
+    <link rel="stylesheet" href="./css/chart.css" />
   </head>
 
 
@@ -34,18 +35,47 @@
   <body>
     <section id="introduction">
       <div class="h-screen w-screen">
-        <div id="video-wrap" class="absolute max-h-screen max-w-screen ">
+        <div id="" class="video-wrap absolute max-h-screen max-w-screen ">
           <video class="w-full h-full"id="intro-vid" src="./assets/video/videoplayback.webm" autoplay muted ></video>
         </div>
-        <div id="intro-content" class="absolute h-screen w-screen flex justify-center items-center flex-col text-white">
-          <h2>CHOOSE YOUR FOOD</h2>
-          <h2>WISELY</h2>
+        <div id="intro-content" class="opacity-0 absolute h-screen w-screen flex justify-center items-center flex-col text-white">
+          <h2 class="text-2xl font-medium">CHOOSE YOUR FOOD</h2>
+          <h2 class="text-2xl font-medium">WISELY</h2>
         </div>
       </div>
+      <script src="./js/introduction.js"></script>
     </section>
     <section id="purpose">
-      <div class="h-screen w-screen flex justify-center items-center">
-        <h2>WHY NUTRISENSE</h2>
+      <div class="h-screen w-screen flex justify-center items-center flex-col gap-7">
+        <h1 class="purpose-title text-4xl font-medium">WHY NUTRISENSE</h1>
+        <div class="why flex justify-center items-center flex-row">
+          <div class="chart-container">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+            <div class="chart">
+              <ul class="numbers">
+                <li><span>1500</span></li>
+                <li><span>750</span></li>
+                <li><span>0</span></li>
+              </ul>
+              <ul class="bars">
+                <li><div class="bar" data-percentage="640"></div><span>2018</span></li>
+                <li><div class="bar" data-percentage="794"></div><span>2019</span></li>
+                <li><div class="bar" data-percentage="1094"></div><span>2020</span></li>
+                <li><div class="bar" data-percentage="1149"></div><span>2021</span></li>
+                <li><div class="bar" data-percentage="1406"></div><span>2022</span></li>
+              </ul>
+            </div>
+            <!--chart end-->
+            <script type="text/javascript" src="./js/chart.js">
+            </script>          
+          </div>
+          <div class="left p-20">
+            <p>The number of deaths attributed to malnutrition more 
+              than doubled from 2018 through 2022, according to prelimina
+              ry death certificate data.</p>
+          </div>
+        </div>
+
       </div>
     </section>
     <section id="whoDoWeAim"></section>
