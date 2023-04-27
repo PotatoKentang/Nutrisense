@@ -58,7 +58,6 @@
     ease: 'none',
     scrollTrigger: {
       trigger: '#penjelasanNutrisi',
-      // markers: true,
       start: 'top top',
       end: 'bottom+=1000',
       pin: true,
