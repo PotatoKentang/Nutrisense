@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background:#d0d0d0a0;
+  background:#f2f2f2 ;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -48,4 +48,12 @@ svg{
   width: 0;
 }
 
-
+.my-text{
+  white-space: nowrap;
+  
+  /* Hides the text content of h2 as default. The whole content would show right away with this not here.  */
+     overflow: hidden;
+    
+    /*It needs a monospaced font to work best. Have tested it with Source Code Pro aswell.*/
+    /* font-family: monospace; */
+}
