@@ -57,7 +57,7 @@
     yPercent: -100 * (boxItem.length - 1),
     ease: 'none',
     scrollTrigger: {
-      trigger: '#penjelasanNutrisi',
+      trigger: '#nutrition',
       start: 'top top',
       end: 'bottom+=1000',
       pin: true,
